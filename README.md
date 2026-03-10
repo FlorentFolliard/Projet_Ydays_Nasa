@@ -1,43 +1,51 @@
-# PROJET YDAYS 
-## Analyses de la dangerosité des géocroiseurs 
+# ☄️ Surveillance des Géo-croiseurs (NEO)
+> **Analyse de la dangerosité des objets orbitaux via l'API NASA.**
+
 ---
 
-## Objectifs
+## 🎯 Objectifs du Projet
+Concevoir une pipeline de données complète pour évaluer les risques d'impact planétaire.
 
-Réaliser une **analyse exploratoire** et un document interactif (type PowerBI) pour évaluer les facteurs qui rendent un objet astronomique (geocroiseur) dangereux pour la Terre.
-Le projet a pour but de **concevoir une pipeline** qui permet de collecter des données fournies par la **NASA** grâce à une API.
+* **Extraction :** Collecte automatisée via l'API "NeoWs" fournie par la NASA.
+* **Engineering :** Nettoyage et structuration des données brutes avec Pandas.
+* **Analyse :** Identification des facteurs clés (Diamètre vs Distance) via Python/Seaborn.
+* **Visualisation :** Création d'un dashboard interactif Power BI.
 
-Voici les étapes clés du projet :
+## 🛠️ Stack Technique
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Cleaning-150458?style=flat-square&logo=pandas)
+![PowerBI](https://img.shields.io/badge/PowerBI-Visualisation-F2C811?style=flat-square&logo=powerbi)
 
-- **Choisir** l'API la plus pertinente dans [le site officiel de la NASA](https://api.nasa.gov/)
-- **Collecter** les données brutes en format .csv
-- **Nettoyer** les données
-- **Analyse** exploratoire 
-- **Présentation** et mise en évidence des facteurs clés qui influencent la dangerosité d'un objet
+---
 
-La présentation du Notebook et du Power BI incluront à la fois les données explorées et les connaissances personnelles pour répondre aux objectifs du projet.
+## 🔍 Aperçu de l'Analyse Exploratoire (EDA)
 
+### 🔬 Pourquoi le seuil des 140 mètres ?
 
-### Aperçu de l'analyse
+L'analyse se base sur la norme officielle de la **NASA (CNEOS)**. Ce seuil n'est pas arbitraire :
+- **Seuil de dévastation :** Un impacteur de +140m de diamètre dégage une énergie capable de raser une région entière.
+- **Capacité de pénétration :** Les objets plus petits ont une forte probabilité de se désintégrer dans l'atmosphère avant d'atteindre le sol, limitant ainsi les dégâts à des ondes de choc locales.
+
+*C'est ce qui explique pourquoi, dans nos données, aucun objet en dessous de ce diamètre n'est marqué comme dangereux par la NASA, même en cas de passage très proche.*
 
 ![Scatter Plot](./assets/reports/figures/scatterplot.png)
 
-*La délimitation rouge correspond au seuil critique établi par la NASA qui détermine le diamètre minimum de l'objet pour qu'il soit considéré comme dangereux pour la Terre.*
-*L'analyse montre une concentration critique sous les 20 distances lunaires. 70% des objets observés en dessous de cette distance possédant une diamètre supérieur à 140m sont considérés comme dangereux.*
+> **Insight Clé :** L'analyse confirme le seuil critique de la NASA. 100% des objets classés dangereux dépassent **140m de diamètre**. Cependant, la taille seule ne suffit pas : la proximité est le facteur aggravant.
 
---- ANALYSE DE LA POPULATION CRITIQUE (> 140m) ---
+### 📊 Risque relatif à la distance (Population > 140m)
 
-Tranche Distance | Total Objets | Dangereux  | % de Danger 
--------------------------------------------------------
-0-20 LD         | 55           | 39         | 70.9%
-20-40 LD        | 138          | 57         | 41.3%
-40-60 LD        | 193          | 49         | 25.4%
-60-80 LD        | 195          | 40         | 20.5%
-80-100 LD       | 22           | 6          | 27.3%
+| Tranche Distance | Total Objets | Objets Dangereux | Taux de Danger |
+| :--- | :---: | :---: | :---: |
+| **0-20 LD** | 55 | 39 | **70.9%** |
+| **20-40 LD** | 138 | 57 | 41.3% |
+| **40-60 LD** | 193 | 49 | 25.4% |
+| **60-80 LD** | 195 | 40 | 20.5% |
+| **80-100 LD** | 22 | 6 | 27.3% |
 
-*Ce tableau nous montre le ratio entre le nombre d'objets observés et ceux classés comme dangereux, faisant plus de 140m de diamètre, en fonction de la distance par rapport à la Terre.*
-*On remarque que la proximité joue un rôle dans la dangerosité parmis les plus gros objets observés.*
+👉 **[Consulter le Notebook détaillé (Exploration Python)](./assets/notebooks/eda.ipynb)**
 
+---
 
-
-### Projet conçu et réalisé par Florent FOLLIARD (B1 IA/DATA Paris Ynov Campus) dans le cadre du Ydays "Labo IA/Data"
+### 👤 Contact
+**Florent FOLLIARD** - B1 IA/DATA Paris Ynov Campus
+Projet réalisé dans le cadre du Ydays "Labo IA/Data"
