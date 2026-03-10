@@ -1,2 +1,5 @@
-API : https://api.nasa.gov/ (NeoWs)
-Python requests, pandas
+pandas
+matplotlib
+seaborn
+requests
+ipykernel
