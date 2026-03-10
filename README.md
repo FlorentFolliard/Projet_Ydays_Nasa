@@ -42,10 +42,11 @@ L'analyse se base sur la norme officielle de la **NASA (CNEOS)**. Ce seuil n'est
 | **60-80 LD** | 195 | 40 | 20.5% |
 | **80-100 LD** | 22 | 6 | 27.3% |
 
-👉 **[Consulter le Notebook détaillé (Exploration Python)](./assets/notebooks/eda.ipynb)**
+👉 **[Consulter le Notebook détaillé (Exploration Python)](./assets/notebooks/eda1.ipynb)**
 
 ---
 
 ### 👤 Contact
 **Florent FOLLIARD** - B1 IA/DATA Paris Ynov Campus
-Projet réalisé dans le cadre du Ydays "Labo IA/Data"
+
+*Projet réalisé dans le cadre du Ydays "Labo IA/Data" 2025-2026*
