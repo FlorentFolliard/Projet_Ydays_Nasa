@@ -13,15 +13,17 @@ Concevoir une pipeline de données complète pour évaluer les risques d'impact 
 
 ## 🛠️ Stack Technique
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Cleaning-150458?style=flat-square&logo=pandas)
-![PowerBI](https://img.shields.io/badge/PowerBI-Visualisation-F2C811?style=flat-square&logo=powerbi)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Cleaning-blue?style=flat-square&logo=pandas)
+![PowerBI](https://img.shields.io/badge/PowerBI-Visualisation-blue?style=flat-square&logo=powerbi)
 
 ---
 
 ## 🔍 Aperçu de l'Analyse Exploratoire (EDA)
 
->Dans cet aperçu, on a récupéré les objets observés depuis janvier 2025. 
->Ce graphique contient environ 6200 objets après nettoyage.
+>Dans cet aperçu, on a récupéré les objets observés depuis **janvier 2025**. 
+>Ce graphique contient environ **6200** objets après nettoyage.
+
+![Scatter Plot](./assets/reports/figures/dark_scatterplot.png)
 
 ### 🔬 Pourquoi le seuil des 140 mètres ?
 
@@ -30,8 +32,6 @@ L'analyse se base sur la norme officielle de la **NASA (CNEOS)**. Ce seuil n'est
 - **Capacité de pénétration :** Les objets plus petits ont une forte probabilité de se désintégrer dans l'atmosphère avant d'atteindre le sol, limitant ainsi les dégâts à des ondes de choc locales.
 
 *C'est ce qui explique pourquoi, dans nos données, aucun objet en dessous de ce diamètre n'est marqué comme dangereux par la NASA, même en cas de passage très proche.*
-
-![Scatter Plot](./assets/reports/figures/dark_scatterplot.png)
 
 > **Insight Clé :** L'analyse confirme le seuil critique de la NASA. 100% des objets classés dangereux dépassent **140m de diamètre**. Cependant, la taille seule ne suffit pas : la proximité est le facteur aggravant.
 
@@ -44,6 +44,8 @@ L'analyse se base sur la norme officielle de la **NASA (CNEOS)**. Ce seuil n'est
 | **40-60 LD** | 193 | 49 | 25.4% |
 | **60-80 LD** | 195 | 40 | 20.5% |
 | **80-100 LD** | 22 | 6 | 27.3% |
+
+> Ce tableau nous montre que la distance joue un rôle parmis les candidats dépassants le seuil des 140m de diamètre.
 
 👉 **[Consulter le Notebook détaillé (Exploration Python)](./assets/notebooks/eda1.ipynb)**
 
