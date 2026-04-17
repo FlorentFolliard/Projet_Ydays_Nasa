@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/neo.png" alt="neo" width="800">
+</p>
+
+
 # ☄️ Surveillance des Géo-croiseurs (NEO)
 > **Analyse de la dangerosité des objets orbitaux via l'API NASA.**
 
