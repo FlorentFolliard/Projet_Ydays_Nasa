@@ -52,6 +52,21 @@ L'analyse se base sur la norme officielle de la **NASA (CNEOS)**. Ce seuil n'est
 
 > Ce tableau nous montre que la distance joue un rôle parmis les candidats dépassants le seuil des 140m de diamètre.
 
+![Boxplot](./assets/reports/figures/dark_boxplot.png)
+
+> Ce boxplot met en évidence la différence de vitesse médiane pour les objets dangereux comparés aux objets non-dangereux.
+> Cela met en évidence l'importance de la vitesse, et donc de l'énergie cinétique potentielle, dans la classification d'objets dangereux.
+
+### Pour finir sur une note optimiste...
+
+![Dimorphos](./assets/dimorphos.jpg)
+
+En septembre 2022, la NASA a mené à bien la mission __DART__ qui consistait à dévier la trajectoire d'un système binaire d'astéroïdes.
+Comme on peut le voir sur la photographie ci-dessus, c'est un système binaire composé d'un petit astéroïde, __Dimorphos__ qui orbite autour d'un plus grand, __Didymos__.
+La NASA a envoyé un projectile sur Dimorphos, qui l'a fait légèrement dévier dans son orbite autour de Didymos, qui a lui-même dévié de sa trajectoire suite à cet impact.
+La mission est __un grand succès__, excédant les prédictions établies.
+C'est donc une grande avancée dans la défense planétaire.
+
 👉 **[Consulter le Notebook détaillé (Exploration Python)](./assets/notebooks/eda1.ipynb)**
 
 ---
