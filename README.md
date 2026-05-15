@@ -23,6 +23,42 @@ Concevoir une pipeline de données complète pour évaluer les risques d'impact 
 
 ---
 
+🚀 Installation & Utilisation
+Pour cloner ce projet et reproduire l'analyse sur votre machine, suivez ces étapes :
+
+1. Prérequis
+Python 3.8 ou supérieur.
+
+Une clé API NASA (gratuite). Obtenez-la ici : api.nasa.gov.
+
+2. Clonage du projet
+Bash
+git clone https://github.com/votre-username/votre-repo-neo.git
+cd votre-repo-neo
+3. Configuration de l'environnement virtuel
+Bash
+# Création du venv
+python -m venv venv
+
+# Activation (Windows)
+.\venv\Scripts\activate
+
+# Activation (Linux/macOS)
+source venv/bin/activate
+4. Installation des dépendances
+Bash
+pip install -r requirements.txt
+5. Configuration des variables d'environnement
+Créez un fichier .env à la racine du projet et ajoutez votre clé API :
+
+Plaintext
+NASA_API_KEY=votre_cle_ici
+6. Lancement de la pipeline
+Bash
+python main.py
+
+---
+
 ## 🔍 Aperçu de l'Analyse Exploratoire (EDA)
 
 >Dans cet aperçu, on a récupéré les objets observés depuis **janvier 2025**. 
@@ -68,6 +104,10 @@ La mission est __un grand succès__, excédant les prédictions établies.
 C'est donc une grande avancée dans la défense planétaire.
 
 👉 **[Consulter le Notebook détaillé (Exploration Python)](./assets/notebooks/eda1.ipynb)**
+
+### A votre tour !
+
+Pour 
 
 ---
 
