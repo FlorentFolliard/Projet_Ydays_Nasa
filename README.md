@@ -23,7 +23,8 @@ Concevoir une pipeline de données complète pour évaluer les risques d'impact 
 
 ---
 
-🚀 Installation & Utilisation
+## 🚀 Installation & Utilisation
+
 Pour cloner ce projet et reproduire l'analyse sur votre machine, suivez ces étapes :
 
 1. Prérequis
@@ -37,13 +38,13 @@ git clone https://github.com/votre-username/votre-repo-neo.git
 cd votre-repo-neo
 3. Configuration de l'environnement virtuel
 Bash
-# Création du venv
+__Création du venv__
 python -m venv venv
 
-# Activation (Windows)
+__Activation (Windows)__
 .\venv\Scripts\activate
 
-# Activation (Linux/macOS)
+__Activation (Linux/macOS)__
 source venv/bin/activate
 4. Installation des dépendances
 Bash
