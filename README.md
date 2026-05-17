@@ -27,43 +27,43 @@ Concevoir une pipeline de données complète pour évaluer les risques d'impact 
 
 Pour cloner ce projet et reproduire l'analyse sur votre machine, suivez ces étapes :
 
-__Prérequis :__
+1. __Prérequis :__
 
-Python 3.8 ou supérieur.
+  Python 3.8 ou supérieur.
 
-Une clé API NASA (gratuite). Obtenez-la ici : api.nasa.gov.
+  Une clé API NASA (gratuite). Obtenez-la ici : api.nasa.gov.
 
-__Clonage du projet :__
+2. __Clonage du projet :__
 
-git clone https://github.com/FlorentFolliard/Projet_Ydays_Nasa.git
+  >git clone https://github.com/FlorentFolliard/Projet_Ydays_Nasa.git
 
-__Configuration de l'environnement virtuel :__
+3. __Configuration de l'environnement virtuel :__
 
-Création du venv
+  Création du venv
 
->python -m venv venv
+  >python -m venv venv
 
-Activation (Windows)
+  Activation (Windows)
 
->.\venv\Scripts\activate
+  >.\venv\Scripts\activate
 
-Activation (Linux/macOS)
+  Activation (Linux/macOS)
 
->source venv/bin/activate
+  >source venv/bin/activate
 
-__Installation des dépendances :__
+4. __Installation des dépendances :__
 
->pip install -r requirements.txt
+  >pip install -r requirements.txt
 
-__Configuration des variables d'environnement :__
+5. __Configuration des variables d'environnement :__
 
-Créez un fichier .env à la racine du projet et ajoutez votre clé API :
+  Créez un fichier .env à la racine du projet et ajoutez votre clé API :
 
->NASA_API_KEY=votre_cle_ici
+  >NASA_API_KEY=votre_cle_ici
 
-__Lancement de la pipeline :__
+6. __Lancement de la pipeline :__
 
->python main.py
+  >python main.py
 
 ---
 
