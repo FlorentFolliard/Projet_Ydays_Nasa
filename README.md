@@ -33,30 +33,37 @@ Python 3.8 ou supérieur.
 Une clé API NASA (gratuite). Obtenez-la ici : api.nasa.gov.
 
 2. Clonage du projet
-Bash
-git clone https://github.com/votre-username/votre-repo-neo.git
-cd votre-repo-neo
+
+git clone https://github.com/votre-username/Projet_Ydays_Nasa.git
+
 3. Configuration de l'environnement virtuel
+
 Bash
 __Création du venv__
-python -m venv venv
+
+>python -m venv venv
 
 __Activation (Windows)__
-.\venv\Scripts\activate
+
+>.\venv\Scripts\activate
 
 __Activation (Linux/macOS)__
-source venv/bin/activate
+
+>source venv/bin/activate
+
 4. Installation des dépendances
-Bash
-pip install -r requirements.txt
+
+>pip install -r requirements.txt
+
 5. Configuration des variables d'environnement
+
 Créez un fichier .env à la racine du projet et ajoutez votre clé API :
 
-Plaintext
-NASA_API_KEY=votre_cle_ici
+>NASA_API_KEY=votre_cle_ici
+
 6. Lancement de la pipeline
-Bash
-python main.py
+
+>python main.py
 
 ---
 
